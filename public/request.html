@@ -1,0 +1,10 @@
+<div class="text-center">
+  <h1 class="text-2xl font-bold my-5">
+    Simple Request Example
+  </h1>
+  <button hx-indicator="#loading" hx-get="/users" hx-vals='{"limit": 3}' hx-target="#users"
+    class="bg-blue-500 text-white py-2 px-3 my-5 rounded-lg">Fetch
+    Users</button>
+  <span class="htmx-indicator" id="loading"><img class="m-auto h-10" src="loader.gif" /></span>
+  <div id="users"></div>
+</div>
